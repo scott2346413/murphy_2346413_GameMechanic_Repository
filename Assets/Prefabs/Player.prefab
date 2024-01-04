@@ -298,6 +298,7 @@ Transform:
   m_Children:
   - {fileID: 3935195147575078266}
   - {fileID: 616531632593552754}
+  - {fileID: 1054544166604331625}
   - {fileID: 2302350866914951565}
   m_Father: {fileID: 2820331724113736156}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -439,6 +440,84 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 2367344900915328243}
   gravity: 40
+--- !u!1001 &659996321848245634
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6126621932819000075}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d5fc29d458e71594f856dc63bf930682, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d5fc29d458e71594f856dc63bf930682, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d5fc29d458e71594f856dc63bf930682, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d5fc29d458e71594f856dc63bf930682, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d5fc29d458e71594f856dc63bf930682, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d5fc29d458e71594f856dc63bf930682, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d5fc29d458e71594f856dc63bf930682, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d5fc29d458e71594f856dc63bf930682, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d5fc29d458e71594f856dc63bf930682, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d5fc29d458e71594f856dc63bf930682, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d5fc29d458e71594f856dc63bf930682, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d5fc29d458e71594f856dc63bf930682, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d5fc29d458e71594f856dc63bf930682, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d5fc29d458e71594f856dc63bf930682, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5fc29d458e71594f856dc63bf930682, type: 3}
+      propertyPath: m_Name
+      value: CYberpunkBike
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d5fc29d458e71594f856dc63bf930682, type: 3}
+--- !u!4 &1054544166604331625 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d5fc29d458e71594f856dc63bf930682, type: 3}
+  m_PrefabInstance: {fileID: 659996321848245634}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1151841302653499971
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -619,7 +698,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3086977658922337683, guid: 8b3a281667c778e40b8c52595690740a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
