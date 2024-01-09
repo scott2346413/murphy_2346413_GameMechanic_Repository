@@ -22,7 +22,7 @@ public class MovementControls : MonoBehaviour
 
     Vector3 rotation = Vector3.zero;
     float turnSpeed = 0;
-    float forwardThrust = 0;
+    public float forwardThrust = 0;
     bool isThrusting = false;
 
     public enum TurnState
@@ -36,6 +36,7 @@ public class MovementControls : MonoBehaviour
 
     private void Start()
     {
+        forwardThrust = 0;
         rotation = transform.rotation.eulerAngles;
     }
 

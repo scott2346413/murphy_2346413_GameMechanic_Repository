@@ -22,6 +22,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "ResetPosition",
+                    "type": "Button",
+                    "id": "a5a22ebc-ebea-4cc3-a6d7-f8b49c32b69f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -66,6 +75,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "LeftThrust",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7211d3a6-b9f9-4321-abd2-dda18b6424e6",
+                    "path": "<XRController>{RightHand}/{SecondaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ResetPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "52e1c3fc-9183-44a5-8164-4dbf585d060f",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ResetPosition",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
