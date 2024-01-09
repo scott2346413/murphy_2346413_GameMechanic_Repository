@@ -20203,17 +20203,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 75225426093076833, guid: 13d4b7fee2a39df4ca2fcefe87bdb6b9, type: 3}
+      propertyPath: tiltAngle
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 411360945011830175, guid: 13d4b7fee2a39df4ca2fcefe87bdb6b9, type: 3}
       propertyPath: maxSpeed
       value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 411360945011830175, guid: 13d4b7fee2a39df4ca2fcefe87bdb6b9, type: 3}
       propertyPath: turnDrag
-      value: 120
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 411360945011830175, guid: 13d4b7fee2a39df4ca2fcefe87bdb6b9, type: 3}
       propertyPath: dragSpeed
-      value: 15
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 411360945011830175, guid: 13d4b7fee2a39df4ca2fcefe87bdb6b9, type: 3}
       propertyPath: thrustSpeed
@@ -20221,11 +20225,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 411360945011830175, guid: 13d4b7fee2a39df4ca2fcefe87bdb6b9, type: 3}
       propertyPath: maxTurnSpeed
-      value: 60
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 411360945011830175, guid: 13d4b7fee2a39df4ca2fcefe87bdb6b9, type: 3}
       propertyPath: turnAcceleration
-      value: 100
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 2820331724113736156, guid: 13d4b7fee2a39df4ca2fcefe87bdb6b9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27634,11 +27638,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6690101801901270091, guid: 29143835e29f14e41a382a858429be01, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 517.6
+      value: 500.1
       objectReference: {fileID: 0}
     - target: {fileID: 6690101801901270091, guid: 29143835e29f14e41a382a858429be01, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 392
+      value: 402
       objectReference: {fileID: 0}
     - target: {fileID: 6690101801901270091, guid: 29143835e29f14e41a382a858429be01, type: 3}
       propertyPath: m_LocalPosition.z
