@@ -19,6 +19,8 @@ public class RaceManager : MonoBehaviour
     public InputActionReference resetPlayerPosition;
     public Transform player;
 
+    public MovementControls movement;
+
     private void Update()
     {
         if (raceStarted)
@@ -38,6 +40,7 @@ public class RaceManager : MonoBehaviour
 
     void ResetPlayerPosition()
     {
+
         for(int i = 0; i<gates.Length; i++)
         {
             Gate currentGate = gates[i];
@@ -55,7 +58,7 @@ public class RaceManager : MonoBehaviour
             if (!currentGate.reached)
             {
                 player.position = previousGate.transform.position;
-                player.rotation = previousGate.transform.rotation;
+                movement.ResetMovement(previousGate.transform.rotation.eulerAngles + new Vector3(0, 90, 0));
                 break;
             }
         }
@@ -90,13 +93,14 @@ public class RaceManager : MonoBehaviour
 
         if (allGatesReached)
         {
+
+            foreach (Gate gate in gates)
+            {
+                gate.reached = false;
+            }
+
             if (lap < laps)
             {
-                foreach (Gate gate in gates)
-                {
-                    gate.reached = false;
-                }
-
                 lap++;
             }
             else

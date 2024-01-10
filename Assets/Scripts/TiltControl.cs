@@ -30,7 +30,7 @@ public class TiltControl : MonoBehaviour
                 tilt = tiltAngle; break;
         }
 
-        rotation.z = Mathf.Lerp(rotation.z, tilt, Time.deltaTime*2);
+        rotation.z = Mathf.Lerp(rotation.z, tilt, Time.deltaTime*0.5f);
         bike.localRotation = Quaternion.Euler(rotation);
     }
 }

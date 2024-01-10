@@ -17,6 +17,6 @@ public class InfoDisplayManager : MonoBehaviour
 
     private void Update()
     {
-        infoDisplay.text = "Lap " + raceManager.lap + "\n" + "Speed " + movement.forwardThrust + "\n" + "Time " + Mathf.Clamp((Time.time - 4), 0, Mathf.Infinity).ToString();
+        infoDisplay.text = "Lap " + raceManager.lap + "/" + raceManager.laps + "\n" + "Speed " + movement.forwardThrust + "\n" + "Time " + Mathf.Clamp((Time.time - 4), 0, Mathf.Infinity).ToString();
     }
 }

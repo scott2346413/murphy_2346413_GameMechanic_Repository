@@ -11,6 +11,7 @@ public class MovementControls : MonoBehaviour
 
     public InputActionReference rightThrust;
     public InputActionReference leftThrust;
+    public InputActionReference breakInput;
 
     public float thrustSpeed;
     public float dragSpeed;
@@ -20,10 +21,13 @@ public class MovementControls : MonoBehaviour
     public float turnDrag;
     public float maxTurnSpeed;
 
+    public float breakSpeed;
+
     Vector3 rotation = Vector3.zero;
     float turnSpeed = 0;
     public float forwardThrust = 0;
     bool isThrusting = false;
+    bool isBreaking = false;
 
     public enum TurnState
     {
@@ -44,6 +48,7 @@ public class MovementControls : MonoBehaviour
     void Update()
     {
         CalculateTurn();
+        CalculateBreak();
         CalculateThrust();
 
         controller.Move(transform.forward * forwardThrust * Time.deltaTime);
@@ -104,6 +109,23 @@ public class MovementControls : MonoBehaviour
             forwardThrust -= dragSpeed * Time.deltaTime;
         }
 
+        if (isBreaking)
+        {
+            Debug.Log("BREAK");
+            forwardThrust -= breakSpeed * Time.deltaTime;
+        }
+
         forwardThrust = Mathf.Clamp(forwardThrust, 0, maxSpeed);
+    }
+
+    void CalculateBreak()
+    {
+        isBreaking = breakInput.action.IsPressed();
+    }
+
+    public void ResetMovement(Vector3 newRotation)
+    {
+        forwardThrust = 0;
+        rotation = newRotation;
     }
 }

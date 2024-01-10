@@ -771,12 +771,14 @@ MonoBehaviour:
   bike: {fileID: 6126621932819000075}
   rightThrust: {fileID: 3222998752902628975, guid: 31018a863854b504b98fccf6472f26df, type: 3}
   leftThrust: {fileID: -6359346360378295219, guid: 31018a863854b504b98fccf6472f26df, type: 3}
-  thrustSpeed: 20
-  dragSpeed: 30
-  maxSpeed: 60
+  breakInput: {fileID: 5910618659788510030, guid: 31018a863854b504b98fccf6472f26df, type: 3}
+  thrustSpeed: 8
+  dragSpeed: 5
+  maxSpeed: 100
   turnAcceleration: 200
-  turnDrag: 100
-  maxTurnSpeed: 60
+  turnDrag: 300
+  maxTurnSpeed: 150
+  breakSpeed: 25
   forwardThrust: 0
   turnState: 0
 --- !u!143 &2367344900915328243
@@ -908,7 +910,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d5fc29d458e71594f856dc63bf930682, type: 3}
       propertyPath: m_Name
-      value: CYberpunkBike
+      value: CyberpunkBike
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
