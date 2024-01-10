@@ -11,15 +11,20 @@ public class RaceManager : MonoBehaviour
     public int laps;
 
     public int lap = 1;
-    bool raceStarted = false;
+    public bool raceStarted = false;
 
-    public TextMeshProUGUI countdown;
-    public GameObject start;
+    public GameObject startUI;
+    public float startTime;
 
     public InputActionReference resetPlayerPosition;
     public Transform player;
 
     public MovementControls movement;
+
+    public TextMeshProUGUI personalBest;
+    public TextMeshProUGUI previousTime;
+
+    float pb = Mathf.Infinity;
 
     private void Update()
     {
@@ -66,13 +71,12 @@ public class RaceManager : MonoBehaviour
 
     void Countdown()
     {
-            countdown.text = (3 - ((int)Time.time)).ToString();
-
-            if(Time.time > 4)
-            {
-                start.SetActive(false);
-                raceStarted = true;
-            }
+        if (gates[0].reached)
+        {
+            raceStarted = true;
+            startUI.SetActive(false);
+            startTime = Time.time;
+        }
     }
 
     void UpdateGates()
@@ -105,9 +109,26 @@ public class RaceManager : MonoBehaviour
             }
             else
             {
-                Debug.Log("race finish");
-                //race finish
+                ResetRace();
             }
+        }
+    }
+
+    void ResetRace()
+    {
+        lap = 1;
+        raceStarted = false;
+        startUI.SetActive(true);
+        gates[0].gameObject.SetActive(true);
+
+        float finishTime = Time.time - startTime;
+
+        previousTime.text = finishTime.ToString();
+
+        if(finishTime < pb)
+        {
+            personalBest.text = finishTime.ToString();
+            pb = finishTime;
         }
     }
 }

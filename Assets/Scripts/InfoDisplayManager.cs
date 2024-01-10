@@ -17,6 +17,13 @@ public class InfoDisplayManager : MonoBehaviour
 
     private void Update()
     {
-        infoDisplay.text = "Lap " + raceManager.lap + "/" + raceManager.laps + "\n" + "Speed " + movement.forwardThrust + "\n" + "Time " + Mathf.Clamp((Time.time - 4), 0, Mathf.Infinity).ToString();
+        if (raceManager.raceStarted)
+        {
+            infoDisplay.text = "Lap " + raceManager.lap + "/" + raceManager.laps + "\n" + "Speed " + movement.forwardThrust + "\n" + "Time " + (Time.time - raceManager.startTime).ToString();
+        }
+        else
+        {
+            infoDisplay.text = "Waiting to Start \n --- \n Speed " + movement.forwardThrust;
+        }
     }
 }
