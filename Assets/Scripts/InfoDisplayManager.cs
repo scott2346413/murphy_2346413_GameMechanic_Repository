@@ -12,7 +12,10 @@ public class InfoDisplayManager : MonoBehaviour
 
     private void Start()
     {
-        raceManager = FindObjectOfType<RaceManager>();
+        if (raceManager == null)
+        {
+            raceManager = FindObjectOfType<RaceManager>();
+        }
     }
 
     private void Update()
