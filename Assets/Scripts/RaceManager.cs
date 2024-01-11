@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using System.Linq;
 using TMPro;
 using UnityEngine;
@@ -25,6 +26,16 @@ public class RaceManager : MonoBehaviour
     public TextMeshProUGUI previousTime;
 
     float pb = Mathf.Infinity;
+
+    private void Start()
+    {
+        if(gates.Length == 0)
+        {
+            gates = FindObjectsOfType<Gate>();
+            Array.Reverse(gates);
+            Debug.Log(gates);
+        }
+    }
 
     private void Update()
     {
@@ -86,7 +97,7 @@ public class RaceManager : MonoBehaviour
 
         foreach (Gate gate in gates)
         {
-            gate.gameObject.SetActive(!gate.reached && activeLeft > 0);
+            gate.particles.SetActive(!gate.reached && activeLeft > 0);
 
             if (!gate.reached)
             {
@@ -119,7 +130,8 @@ public class RaceManager : MonoBehaviour
         lap = 1;
         raceStarted = false;
         startUI.SetActive(true);
-        gates[0].gameObject.SetActive(true);
+        gates[0].particles.SetActive(true);
+        movement.forwardThrust = 0;
 
         float finishTime = Time.time - startTime;
 

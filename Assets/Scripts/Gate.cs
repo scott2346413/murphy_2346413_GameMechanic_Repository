@@ -5,13 +5,16 @@ using UnityEngine;
 public class Gate : MonoBehaviour
 {
     public bool reached = false;
+    public AudioSource rewardSound;
+
+    public GameObject particles;
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("triggered");
-        if(other.tag == "Player")
+        if(other.tag == "Player" && reached == false && particles.activeSelf)
         {
             reached = true;
+            rewardSound.Play();
         }
     }
 }
