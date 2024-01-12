@@ -2,7 +2,6 @@
 
 ![Highway](Gifs/Highway%20Gif.gif)
 ![Jumping](Gifs/Jumping%20Gif.gif)
-![Scenic](Gifs/Scenic%20Gif.gif)
 ![Tram Jump](Gifs/Tram%20Jump%20Gif.gif)
 ![Tutorial](Gifs/Tutorial%20Gif.gif)
 
@@ -30,7 +29,7 @@ Can you push yourself to get the bronze, silver and gold medals? Keep track of y
 Watch the full game trailer here!
 
 <a href="https://youtu.be/JH_ClvE67l8" target="_blank">
-  <img src="https://img.youtube.com/vi/JH_ClvE67l8/maxresdefault.jpg" alt="Watch the video" width="512">
+  <img src="Gifs/Scenic%20Gif.gif" alt="Watch the video" width="512">
 </a>
 
 ## How to Play
