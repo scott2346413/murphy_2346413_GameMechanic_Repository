@@ -1,12 +1,17 @@
 # RiftRush
 
-To Add: GIFs
+![Highway](Gifs/Highway%20Gif.gif)
+![Jumping](Gifs/Jumping%20Gif.gif)
+![Scenic](Gifs/Scenic%20Gif.gif)
+![Tram Jump](Gifs/Tram%20Jump%20Gif.gif)
+![Tutorial](Gifs/Tutorial%20Gif.gif)
 
 1. [Overview](#overview)
 2. [Key Features](#key-features)
 3. [Gameplay](#gameplay)
 4. [How To Play](#how-to-play)
-5. [Feedback And Support](#feedback-and-support)
+5. [Controls](#controls)
+6. [Feedback And Support](#feedback-and-support)
 
 ## Overview
 
@@ -38,9 +43,13 @@ Watch the full game trailer here!
 
 ## Controls
 **Left and Right Trigger:** Thrust left and right
+
 **a:** Brake
+
 **b:** Reset Position
+
 **x and y:** Adjust Height
+
 **Menu button:** "back to lobby" menu
 
 ## Feedback and Support
